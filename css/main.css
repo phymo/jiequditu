@@ -1,0 +1,51 @@
+body {background-color: #CCC; color: black;}
+html, body, #map {width: 100%; height: 100%; z-index: 1; position: absolute; margin: 0;}
+ul {
+	list-style-type: none; 
+	padding-left: 0; 
+	margin-bottom: 0;
+	background-color: #5D5D5D
+	}
+li {
+	color:lightgray;
+	font-family: Helvetica, sans-serif;
+	font-size: 17px;
+    padding: 20px 0 15px 15px;    
+    max-height: 480px;
+    margin: 0 5px;
+    }
+li:hover {background-color: #7D7D7D; color: white;}
+
+#side-menu{
+	
+	display:block;
+	position: absolute;
+    z-index: 2; 
+}
+#menu-hide{
+	z-index:2;
+	position:inherit
+}
+#menu-con{
+	width: 280px;
+    background-color: rgba(156,156,156,.9);
+    border: solid 6px white;
+    overflow: hidden;
+}
+#filterInput{
+    margin: 5px 10px 5px 5px;
+    width: 83%;
+    height: 35px;
+    font-size: 17px;
+    font-family: helvetica, sans-serif;
+    color: #9D9D9D;
+    border:groove;
+	
+}
+/*当浏览器宽度小于680px时隐藏菜单栏*/
+@media only screen and (max-width:680px ) {
+	#side-menu{
+		display:none;
+	}
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Map</title>
+		<mata name="viewport" content="widith=device-width, initial-scale=1" />
+		<link rel="stylesheet"  href="css/main.css"  />
+	</head>
+	<body>
+	<!--侧边栏-->
+		<div id="side-menu">
+			<div id="menu-con">
+			<input type="text" id="filterInput" data-bind="textinput: filterText" text placeholder="search for names">
+			
+			<ul id="filter" data-bind="foreach: filteredList">
+				<li class="result" data-bind="text: title, click:$parent.listClick"></li>
+			</ul>
+			</div>
+			<button id="menu-hide" >hide menu</button>
+		</div>
+		<button id="menu-hide" >show menu</button>
+		<!--地图-->
+	    <div class="map" id="map"></div>
+	    <!--引入knockout.js jquery, googlmaps;-->
+	    <script src="js/knockout-3.4.2.js"></script>
+	    <script src="js/jquery-2.1.0.js"></script>
+	    <script defer="defer" src="js/app.js"></script>
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCreqxs24M1gadF_Z_sYSZH833EiUE-Fl4&callback=start" onerror="goError()"></script>
+	    
+	</body>
+</html>
