@@ -49,3 +49,20 @@ li:hover {background-color: #7D7D7D; color: white;}
 	}
 
 }
+
+#map-error-display {
+	display: none; /* Hidden by default */
+	position: absolute; /* Or relative, depending on desired layout */
+	top: 50%; /* Center vertically */
+	left: 50%; /* Center horizontally */
+	transform: translate(-50%, -50%); /* Adjust for exact centering */
+	padding: 15px;
+	background-color: #f8d7da; /* Light red background */
+	color: #721c24; /* Dark red text */
+	border: 1px solid #f5c6cb; /* Red border */
+	border-radius: 5px;
+	text-align: center;
+	z-index: 1000; /* Ensure it's above other content if map fails */
+	width: 80%; /* Adjust width as needed */
+	max-width: 500px; /* Maximum width */
+}
